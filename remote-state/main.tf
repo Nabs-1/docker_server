@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "us-east-1"
-  profile= "yusuf"
+  region = "us-east-2"
+  profile= "Nabilah"
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "yusuf-docker-tfstate"
+  bucket = "nabilah-docker-tfstate"
      
   lifecycle {
     prevent_destroy = true
