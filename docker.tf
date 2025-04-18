@@ -7,11 +7,11 @@ provider "aws" {
 # Create a remote backend for your terraform 
 terraform {
   backend "s3" {
-    bucket = "austinobioma-docker-tfstate"
+    bucket = "nabilah-docker-tfstate"
     dynamodb_table = "app-state"
-    key    = "LockID"
+    key    = "terra"
     region = "us-east-2"
-    profile = "austinobioma-realcloud"
+    profile = "Nabilah"
   }
 }
 
