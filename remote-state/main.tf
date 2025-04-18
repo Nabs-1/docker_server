@@ -23,10 +23,10 @@ resource "aws_dynamodb_table" "terraform_state_lock" {
   name           = "app-state"
   read_capacity  = 1
   write_capacity = 1
-  hash_key       = "LockID"
+  hash_key       = "terra"
 
   attribute {
-    name = "LockID"
+    name = "terra"
     type = "S"
   }
 }
